@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+
+    <title>Portfólio José</title>
+</head>
+<body>
+<!-- Barra de Navegação -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">JoséDev.</a>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-light">
+            <li><a class="uk-button-text uk-text-capitalize" href="#sobre" uk-scroll>Sobre</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projetos" uk-scroll>Projetos</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contato</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Fim da Barra de Navegação -->
+
+<!-- Barra de Navegação Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">JoséDev.</a>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Início</a></li>
+            <li class="uk-active"><a href="#sobre" uk-scroll>Sobre</a></li>
+            <li class="uk-active"><a href="#projetos" uk-scroll>Projetos</a></li>
+            <li class="uk-active"><a href="mailto:">Contato</a></li>
+        </ul>
+    </div>
+</div>
+<!-- Fim da Barra de Navegação Mobile -->
+
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">
+        Olá, sou José, desenvolvedor front-end, <br>designer gráfico e designer de UI/UX.
+    </h1>
+    <a href="#sobre" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>Sobre Mim</a>
+
+    <!-- Botão WhatsApp atualizado -->
+    <a href="https://wa.me/244939815394?text=Olá,%20quero%20contratar%20seus%20serviços!"  
+       class="uk-text-capitalize uk-button uk-button-whatsapp" 
+       target="_blank">
+       <span uk-icon="icon: whatsapp"></span> Contratar
+    </a>
+</section>
+
+<!-- Fim do Home -->
+
+<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+<!-- Sobre Mim -->
+<section id="sobre" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">Sobre Mim</h3>
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    Sou apaixonado por criar experiências digitais elegantes e funcionais. Trabalho com desenvolvimento web front-end, design gráfico e UI/UX, buscando sempre soluções criativas e eficientes para cada projeto. Tenho experiência em HTML, CSS, JavaScript e frameworks modernos, sempre aplicando boas práticas e atenção aos detalhes.  
+    <br><br>
+    Além disso, valorizo interfaces intuitivas que facilitam a interação do usuário, garantindo que cada projeto seja esteticamente agradável e funcional.
+</p>
+<a href="" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="instagram"></a> &nbsp;
+<a href="" class="uk-light uk-button-text" uk-icon="dribbble"></a> &nbsp;
+<a href="" class="uk-button-text uk-light" uk-icon="github"></a> &nbsp;
+<a href="" class="uk-light uk-button-text" uk-icon="linkedin"></a>
+</section>
+<!-- Fim do Sobre Mim -->
+
+<!-- Projetos -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projetos" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">Projetos</h3>
+<p class="uk-margin-xlarge-left">Projetos nos quais estive trabalhando recentemente</p>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+        <h4>Nome do Projeto</h4>
+        <p>Descrição do projeto. Tecnologias usadas, objetivos e resultados alcançados.</p>
+        <a class="uk-button-text uk-text-decoration-none" href="">
+            <span uk-icon="icon: link"></span> Link do Site
+        </a>
+    </div>
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+        <h4>Nome do Projeto</h4>
+        <p>Descrição do projeto. Tecnologias usadas, objetivos e resultados alcançados.</p>
+        <a class="uk-button-text uk-text-decoration-none" href="">
+            <span uk-icon="icon: link"></span> Link do Site
+        </a>
+    </div>
+</div>
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<!-- Fim Projetos -->
+    
+</body>
+</html>
